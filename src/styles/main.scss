@@ -1,3 +1,98 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h2, h3, h4 {
+    font-weight: 200;
+    margin-top: 0;
+    span {
+        font-weight: 900;
+    }
+}
+
+p {
+    font-size: 15.57px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.grid-item-blue, .grid-item-dgray, .grid-item-human, .grid-item-form {
+    color: #ffffff;
+}
+
+a, input, textarea {
+    font-size: 16.57px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    display: block;
+    max-width: 150px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "a" "a" "a" "a" "a" "a" "b" "b" "b"
+                        "c" "c" "c" "c" "d" "d" "d" "d" "d"
+                        "c" "c" "c" "c" "e" "e" "e" "e" "e"
+                        "f" "f" "f" "g" "g" "g" "g" "g" "g";
+}
+
+.grid-item-bg, .grid-item-gray, .grid-item-blue, 
+.grid-item-beige, .grid-item-dgray, .grid-item-human, .grid-item-form {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.grid-item-bg {
+    background-image: url(../img/bg1.png);
+    grid-area: a;
+}
+
+.grid-item-gray {
+    background-color: #f3f3f3;
+    grid-area: b;
+}
+
+.grid-item-blue {
+    background-image: url(../img/bg2.png);
+    grid-area: c;
+}
+
+.grid-item-beige {
+    background-image: url(../img/bg3.png);
+    grid-area: d;
+}
+
+.grid-item-dgray {
+    background-image: url(../img/bg4.png);
+    grid-area: e;
+}
+
+.grid-item-human {
+    background-image: url(../img/bg5.png);
+    grid-area: f;
+}
+
+.grid-item-form {
+    background-image: url(../img/bg6.png);
+    grid-area: g;
+}
